@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.fragmets.inputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingStart="10dp"
+      android:paddingEnd="10dp"
+      android:orientation="vertical">
+
+      <EditText
+          android:id="@+id/addTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edit_text"
+          android:padding="15dp"
+          android:maxLines="1"
+          android:layout_marginTop="10dp"
+          android:textSize="20dp"
+          android:hint="Title"/>
+      <EditText
+          android:id="@+id/addsubtitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edit_text"
+          android:padding="15dp"
+          android:maxLines="1"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:textSize="20dp"
+          android:hint="Subtitle"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+       <ImageView
+           android:id="@+id/higp"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:background="@drawable/highp"/>
+          <ImageView
+              android:id="@+id/medp"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_marginStart="20dp"
+              android:background="@drawable/medip"/>
+          <ImageView
+              android:id="@+id/lowp"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_marginStart="20dp"
+              android:background="@drawable/lowp"/>
+
+      </LinearLayout>
+      <EditText
+          android:id="@+id/addnote"
+          android:layout_width="match_parent"
+          android:layout_height="400dp"
+          android:background="@drawable/edit_text"
+          android:padding="15dp"
+          android:gravity="start"
+          android:layout_marginTop="10dp"
+          android:textSize="20dp"
+          android:hint="Notes"/>
+  </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/Default"
+        android:src="@drawable/done" />
+
+</FrameLayout>

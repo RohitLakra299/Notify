@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="130dp"
+        android:layout_height="6dp"
+        android:background="#BBBBBB"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/dialogYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@drawable/yesbtn"
+        android:padding="8dp"
+        />
+    <TextView
+        android:id="@+id/dialogno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18dp"
+        android:background="@drawable/nobtn"
+        android:padding="8dp"
+        />
+
+
+</LinearLayout>
